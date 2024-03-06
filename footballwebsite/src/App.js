@@ -1,4 +1,7 @@
-import Button from './components/button';
+import Button from './components/atoms/tablebutton';
+import Back from './components/atoms/backbutton';
+import Scorebutton from './components/atoms/scorebutton';
+import Table from './components/sites/table';
 import './App.css';
 import {
   createBrowserRouter,
@@ -11,8 +14,12 @@ const router = createBrowserRouter([
     element: <Button />,
   },
   {
+    path: "/",
+    element: <Scorebutton />,
+  },
+  {
     path: "/table",
-    element: <div>back</div>,
+    element: <Table />,
   },
 ]);
 
