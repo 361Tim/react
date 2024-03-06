@@ -10,18 +10,18 @@ export default function Tabledata() {
 
             }))
     }, [])
-
-}
-return (
-    <div>
+    return (
         <div>
-            {team.map(element => {
-                return <Gridtemplate teamName={element.name} />
-            })}
-        </div>
+            <div>
+                {team.map(element => {
+                    return <Gridtemplate teamName={element.name} />
+                })}
+            </div>
 
 
-    </div >
+        </div >
 
-);
+    );
+}
+
 
