@@ -1,5 +1,5 @@
 import React from "react";
-import Back from "../atoms/backbutton";
+import Back from "../atoms/button";
 
 export default function Table() {
     return (
