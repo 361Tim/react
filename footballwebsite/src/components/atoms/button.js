@@ -1,9 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './button.css';
 export default function Button({ to, name }) {
-    return <Link to={to}>{name}</Link>;
-
+    const navigate = useNavigate();
+    return (
+        <div
+            onClick={() => {
+                navigate(to);
+            }
+            }
+        >
+            {name}
+        </div>
+    )
 
 
 }
