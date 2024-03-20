@@ -1,0 +1,19 @@
+.playercontainer {
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    padding: 1.5rem;
+    width: 100vw;
+}
+
+.playerheader {
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    padding: 1.5rem;
+    width: 100vw;
+}

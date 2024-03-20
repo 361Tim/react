@@ -6,7 +6,7 @@ export default function Tabledata() {
     useEffect(() => {
         fetch("https://api.openligadb.de/getbltable/bl2/2022").then
             (res => res.json().then(data => {
-                console.log(data);
+
                 setTeams(data);
 
             }))
@@ -15,8 +15,8 @@ export default function Tabledata() {
         <div>
 
             <div>
-                {teams.map(element => {
-                    return <Gridtemplate teamName={element.teamName} teamIconUrl={element.teamIconUrl} points={element.points} matches={element.matches} won={element.won} lost={element.lost} draw={element.draw} opponentGoals={element.opponentGoals} goals={element.goalDiff} goaldiff={element.goalDiff} />
+                {teams.map((element, Index) => {
+                    return <Gridtemplate place={Index + 1} teamName={element.teamName} teamIconUrl={element.teamIconUrl} points={element.points} matches={element.matches} won={element.won} lost={element.lost} draw={element.draw} opponentGoals={element.opponentGoals} goals={element.goals} goaldiff={element.goalDiff} />
                 })}
             </div>
 

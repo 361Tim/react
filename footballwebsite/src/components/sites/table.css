@@ -1,9 +1,0 @@
-.header {
-    display: grid;
-    grid-template-columns: 15% auto 10% 10% repeat(3, 5%) 10% 10% 10%;
-    gap: 10px;
-    color: white;
-    align-items: center;
-    padding: 1.5rem;
-    width: 100vw;
-}

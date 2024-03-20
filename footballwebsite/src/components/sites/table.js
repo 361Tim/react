@@ -1,15 +1,28 @@
 import React from "react";
 import Button from "../atoms/button";
 import Tabledata from "../molecules/tabledata";
-import Header from "../atoms/header";
-import './table.css'
+import "../atoms/gridstyle.css"
+
 
 export default function Table() {
     return (
         <div>
             <Button to="/" name="<-back" />
-            <div className="header"><Header row1="Verein" row2="Wappen" row3="Punkte" row4="Spiele" row5="S" row6="U" row7="N" row8="Gegentore" row9="Tore" row10="Tordifferenz" /></div>
+            <div className="teamscontainer">
+                <span>Platzierung</span>
+                <span>Verein</span>
+                <span>Wappen</span>
+                <span>Spiele</span>
+                <span>Punkte</span>
+                <span>S</span>
+                <span>U</span>
+                <span>N</span>
+                <span>Tore</span>
+                <span>Gegentore</span>
+                <span>Tordifferenz</span>
+            </div>
             <Tabledata />
+
         </div>
     );
 }

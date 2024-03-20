@@ -1,4 +1,5 @@
-.Tabelle {
+.Tablebuttons,
+.Torschützen {
   color: rgba(217, 217, 217, 1);
   width: 735px;
   height: auto;
@@ -8,4 +9,28 @@
   font-family: Inter;
   margin: 4%;
   cursor: pointer;
+}
+
+.Bundesligabutton {
+  font-weight: bolder;
+
+
+}
+
+.Tablebutton {
+  font-weight: 10;
+
+
+}
+
+.Torschützen {
+  font-weight: bolder;
+  top: 140px;
+  width: 853px;
+
+}
+
+.Tablebuttons,
+.Torschützen:hover {
+  font-size: 400%;
 }
