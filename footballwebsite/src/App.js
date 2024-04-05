@@ -1,4 +1,5 @@
 import Button from './components/atoms/button';
+import './fonts/Inter-VariableFont_slnt,wght.ttf'
 import './App.css';
 import Table from './components/sites/table';
 import Players from './components/sites/scorers';
@@ -13,10 +14,8 @@ const router = createBrowserRouter([
     path: "/",
     element:
       <div>
-        <div className='Tablebuttons'>
-          <span className="Bundesligabutton"><Button to="/table" name="Bundesliga" /> </span>
-          <span className="Tablebutton"> <Button to="/table" name="Tabelle" /></span>
-        </div>,
+
+        <div className="Tablebutton"><Button to="/table" name="Bundesliga Tabelle" /> </div>,
         <div className="Torschützen" > <Button to="/torschützen" name="Torschützen" /> </div >
       </div >
   },
