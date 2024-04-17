@@ -6,7 +6,7 @@ import Playerdata from "../molecules/Playerdata";
 export default function Players() {
     return (
         <div>
-            <Button to="/" name="<-back" />
+            <div className="scorerback"><Button to="/" name="<-back" /></div>
             <Playerdata />
         </div>
     );
