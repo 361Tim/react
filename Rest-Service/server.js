@@ -20,10 +20,16 @@ app.get("/people", async function (req, res) {
     }
 })
 
-app.delete("/people", async (req, res) => {
-    let id = req.params.id;
-    data.splice(id, 1);
-    res.send("done")
+app.delete("/people/:id", async function (req, res) {
+    let sql = "delete from people where id=?";
+    try {
+        let result = await db.query(sql, [req.params.id])
+        console.log(result)
+        res.status(200).send("Datensatz gelöscht")
+    }
+    catch (error) {
+        res.status(404).send(error.message);
+    }
 })
 app.post("/people", async function (req, res) {
 
